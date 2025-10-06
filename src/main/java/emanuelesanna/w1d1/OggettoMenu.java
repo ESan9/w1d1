@@ -17,7 +17,7 @@ public abstract class OggettoMenu {
 
     @Override
     public String toString() {
-        return String.format("%-20s - Prezzo: € %.2f  |  Calorie: %d Kcal",
+        return String.format("%-20s Prezzo: € %.2f | Calorie: %d Kcal",
                 name, price, informazioni);
     }
 }

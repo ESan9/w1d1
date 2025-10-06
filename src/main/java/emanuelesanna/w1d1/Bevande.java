@@ -3,12 +3,10 @@ package emanuelesanna.w1d1;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString(callSuper = true)
 public class Bevande extends OggettoMenu {
     private double volumeLitri;
     private double gradazione;
@@ -17,5 +15,13 @@ public class Bevande extends OggettoMenu {
         super(name, price, informazioni);
         this.volumeLitri = volumeLitri;
         this.gradazione = gradazione;
+    }
+
+    @Override
+    public String toString() {
+        return "Bevande " +
+                "volumeLitri=" + volumeLitri +
+                ", gradazione=" + gradazione +
+                "} " + super.toString();
     }
 }
