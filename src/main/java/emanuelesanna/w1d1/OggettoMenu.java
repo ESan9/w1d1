@@ -17,8 +17,7 @@ public abstract class OggettoMenu {
 
     @Override
     public String toString() {
-        // Uso di String.format per allineare il prezzo
         return String.format("%-20s - Prezzo: € %.2f  |  Calorie: %d Kcal",
-                name, price, informazioni); // 'informazioni' dovrebbe essere il campo caloria
+                name, price, informazioni);
     }
 }

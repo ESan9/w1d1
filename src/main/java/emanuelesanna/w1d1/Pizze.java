@@ -24,8 +24,8 @@ public class Pizze extends OggettoMenu {
     @Override
     public String toString() {
         return super.toString()
-                + "\n  Ingredienti: " + ingredienti.toString()
+                + "\n  Ingredienti: " + ingredienti
                 + "\n  Formato XL disponibile: " + formatoXL
-                + "\n"; // Riga vuota per separazione
+                + "\n";
     }
 }
